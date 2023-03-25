@@ -1,0 +1,86 @@
+@import url(https://fonts.google.com/share?selection.family=Roboto);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: bisque;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+a {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+/*Inicio Estilados para el header - menú de navegación */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 239, 249);
+
+}
+
+.cabecera {
+    background-color: cornsilk;
+    position: sticky;
+    top: 0px;
+    height: 100px;
+}
+
+#cabecera__top {
+    width: auto;
+    height: 100%;
+}
+
+.navbar-dark .nav-link {
+    color: silver;
+}
+/*Fin Estilados para el header - menú de navegación */
+
+/*Inicio estilados banner con video banner/bg */
+body {
+    position: relative;
+    margin: 0;
+}
+
+.sect {
+    width: 100%;
+    min-height: 500px;
+}
+
+#sect1,
+#sect3 {
+    background-color: #3333337d;
+    color: #e6dcdc;
+}
+
+#sect2 {
+    background-color: #dddddd7d;
+    color: #e4e0e0;
+
+}
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 105%;
+    min-height: 100%;
+    transform: translateX(calc((100% - 100vw) / 2));
+    z-index: -2;
+}
+/* Sección de cursos */
+
