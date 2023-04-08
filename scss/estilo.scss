@@ -1,0 +1,39 @@
+// Importar partials
+@import 'base/reset';
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'utilities/map';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/videoBanner';
+@import 'components/galeriaEfecto';
+@import 'components/presentacion';
+@import 'components/cardsInicio';
+
+
+// Estilos globales
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+body {
+    background-color: $color-bisque;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: $font-family;
+    text-align: center;
+}
+
+a {
+    color: $color-black;
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+

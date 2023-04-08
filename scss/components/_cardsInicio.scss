@@ -1,0 +1,22 @@
+@import '../utilities/mixins';
+
+
+.h-100{
+
+
+@media (max-width: 767px) {
+
+    .card-img-top {    
+      @include detrasNav; 
+      max-height: 100px;
+      object-fit: contain;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .card-img-top {
+      max-height: 200px;
+      object-fit: contain;
+    }
+  }
+}

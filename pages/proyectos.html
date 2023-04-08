@@ -6,12 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profe Informática.sh</title>
+    <!--SEO -->
+    <meta name="description" content="Sitio web para aprender informática de manera práctica y sencilla">
+    <meta name="keywords"
+        content="clases de informática, aprendizaje de informática, ciencia de la computación,programación, diseño web, tecnología, mujeres, igualdad de género">
     <!--favicon-->
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <!-- link google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- AOS animaciones con scroll-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <!--  Estilos Bootstrap y css -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--  Estilos css -->
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
@@ -20,9 +27,8 @@
     <!-- Barra de navegación para celulares-->
     <header class="cabecera">
         <!-- logo -->
-        <img id="cabecera__top" src="../assets/img/profeLogo.png" alt="logo sitio">
+        <img id="cabecera__top" src="../assets/img/profeLogo.png" alt="logo sitio" data-aos="flip-left"  data-aos-duration="1500">
         <!-- fin logo -->
-
         <nav class="navbar navbar-expand-md navbar-light bg-light">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
@@ -31,7 +37,7 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Incio</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./secundaria_7.html">Secundaria</a>
@@ -60,7 +66,8 @@
         <video src="../assets/video/bienvenida_1.mp4" autoplay="true" muted="true" loop="true"
             poster="../assets/video/bienvenida_1.mp4"></video>
 
-        <section id="sect1" class="sect text-center py-5">           
+        <!--Carrusel -->
+        <section id="sect1" class="sect text-center py-5">
             <div class="container my-5">
                 <h1 class="text-center mb-5">Proyectos realizados</h1>
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -89,64 +96,88 @@
                         <span class="sr-only">Siguiente</span>
                     </a>
                 </div>
-            </div>
-            <div class="container my-5">
-                <h1 class="text-center mb-5">Galería de imágenes </h1>
-                <div class="row">
-                    <div class="col-md-4 mb-3">
-                        <a href="../assets/img/galeria3.jpeg" data-toggle="lightbox"
-                            data-gallery="example-gallery">
-                            <img src="../assets/img/galeria3.jpeg" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <a href="../assets/img/galeria2.jpeg" data-toggle="lightbox"
-                            data-gallery="example-gallery">
-                            <img src="../assets/img/galeria2.jpeg" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <a href="../assets/img/galeria1.jpeg" data-toggle="lightbox"
-                            data-gallery="example-gallery">
-                            <img src="../assets/img/galeria1.jpeg" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <a href="../assets/img/galeria6.jpeg" data-toggle="lightbox"
-                            data-gallery="example-gallery">
-                            <img src="../assets/img/galeria6.jpeg" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <a href="../assets/img/icoN.png" data-toggle="lightbox"
-                            data-gallery="example-gallery">
-                            <img src="../assets/img/icoN.png" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <a href="../assets/video/bienvenida_2.gif" data-toggle="lightbox"
-                            data-gallery="example-gallery">
-                            <video src="../assets/video/bienvenida_2.gif" class="img-fluid">
-                        </video>
-                        </a>
+                <!--cards galeria -->
+                <div class="container my-5">
+                    <h1 class="text-center mb-5">Galería de imágenes</h1>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="card-flip text-center">
+                                <div class="card-front">
+                                    <a href="../assets/img/icoN.png" data-toggle="lightbox"
+                                        data-gallery="example-gallery">
+                                        <img src="../assets/img/icoN.png" class="img-fluid" style="max-width: 90%;">
+                                    </a>
+                                </div>
+                                <div class="card-back">
+                                    <a href="../assets/img/galeria1.jpeg" data-toggle="lightbox"
+                                        data-gallery="example-gallery">
+                                        <img src="../assets/img/galeria1.jpeg" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card-flip text-center">
+                                <div class="card-front">
+                                    <a href="../assets/img/icoN.png" data-toggle="lightbox"
+                                        data-gallery="example-gallery">
+                                        <img src="../assets/img/icoN.png" class="img-fluid" style="max-width: 90%;">
+                                    </a>
+                                </div>
+                                <div class="card-back">
+                                    <a href="../assets/img/galeria2.jpeg" data-toggle="lightbox"
+                                        data-gallery="example-gallery">
+                                        <img src="../assets/img/galeria2.jpeg" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <div class="card-flip text-center">
+                                <div class="card-front">
+                                    <a href="../assets/img/icoN.png" data-toggle="lightbox"
+                                        data-gallery="example-gallery">
+                                        <img src="../assets/img/icoN.png" class="img-fluid" style="max-width: 90%;">
+                                    </a>
+                                </div>
+                                <div class="card-back">
+                                    <a href="../assets/img/galeria3.jpeg" data-toggle="lightbox"
+                                        data-gallery="example-gallery">
+                                        <img src="../assets/img/galeria3.jpeg" class="img-fluid">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
 
-            <!-- Pie de página -->
-            <footer class="bg-light text-center py-3">
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="../assets/img/bxl-facebook.svg" alt="Logo de Facebook">
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="../assets/img/bxl-instagram.svg" alt="Logo de Instagram">
-                </a>
-                <p>Derechos reservados © 2023 - Profe Informática.Sh</p>
-            </footer>
-            <!-- jQuery para que funcione el menú responsive hamburguesa -->
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <!-- Bootstrap JS -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!-- Pie de página -->
+        <footer class="bg-light text-center py-3">
+            <a href="https://api.whatsapp.com/send?phone=+59899383616" target="_blank" rel="noopener">
+                <img src="../assets/img/bxl-whatsapp.svg" alt="Logo de WhatsApp">
+            </a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener">
+                <img src="../assets/img/bxl-facebook.svg" alt="Logo de Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener">
+                <img src="../assets/img/bxl-instagram.svg" alt="Logo de Instagram">
+            </a>
+            <p>Derechos reservados © 2023 - Profe Informática.Sh</p>
+        </footer>
+        <!-- jQuery para que funcione el menú responsive hamburguesa -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!--JS para AOS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
 </body>
+
 </html>

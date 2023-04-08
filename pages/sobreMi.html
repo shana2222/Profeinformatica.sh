@@ -6,12 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profe Informática.sh</title>
+    <!--SEO -->
+    <meta name="description" content="Sitio web para aprender informática de manera práctica y sencilla">
+    <meta name="keywords"
+        content="clases de informática, aprendizaje de informática, ciencias de la computación,programación, diseño web, tecnología, mujeres, igualdad género">
     <!--favicon-->
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <!-- link google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!--  Estilos Bootstrap y css -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- AOS animaciones con scroll-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="../css/estilo.css">
 </head>
 
@@ -20,7 +26,8 @@
     <!-- Barra de navegación para celulares-->
     <header class="cabecera">
         <!-- logo -->
-        <img id="cabecera__top" src="../assets/img/profeLogo.png" alt="logo sitio">
+        <img id="cabecera__top" src="../assets/img/profeLogo.png" alt="logo sitio" data-aos="flip-left"
+            data-aos-duration="1500">
         <!-- fin logo -->
 
         <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -31,7 +38,7 @@
                 <div class="collapse navbar-collapse" id="navbar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Incio</a>
+                            <a class="nav-link" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./secundaria_7.html">Secundaria</a>
@@ -60,39 +67,37 @@
         <!-- Video de fondo tipo banner-->
         <video src="../assets/video/bienvenida_1.mp4" autoplay="true" muted="true" loop="true"
             poster="../assets/video/bienvenida_1.mp4"></video>
-
         <section id="sect1" class="sect text-center py-5">
-            <div class="container">
-                <h1 class="fw-bold mb-4">PROXIMAMENTE</h1>
-                <img src="https://grupofacela.com/wp-content/uploads/2020/09/en-construccion.png">
-            </div>
-
-            <section class="presentacion">
-                <h1>¡Bienvenido al sitio web de la Profesora de Informática!</h1>
-                <h2>..</h2>
-                <h2>Bienvenidas/os</h2>
-                <p class="lead mb-4">Mi nombre es Shana Feijoo y soy una apasionada de la tecnología y la enseñanza. He
-                    creado este sitio
-                    web para compartir mi conocimiento y experiencia en el campo de la informática con mis estudiantes y
-                    con cualquier persona interesada en aprender más sobre esta fascinante disciplina.</p>
-                <p>En este sitio web encontrarás información sobre mis cursos y talleres, así como también recursos
-                    útiles para aprender programación, bases de datos, seguridad informática, inteligencia artificial y
-                    otros temas relevantes en la era digital en la que vivimos.</p>
-                <p>Además, también publicaré regularmente artículos en mi blog sobre las últimas tendencias y avances en
-                    el mundo de la tecnología, y cómo pueden afectar a nuestra vida cotidiana.</p>
-                <p>¡Gracias por visitar mi sitio web y espero que encuentres la información que buscas!</p>
+            <section class="presentacion" data-aos="fade-right">
+                <div class="card">
+                    <h1 class="card-title">¡Bienvenido al sitio web de la Profesora de Informática!</h1>
+                    <p class="card-text">Mi nombre es Shana Feijoo y soy una apasionada de la tecnología y la
+                        enseñanza. He creado este sitio web para compartir mi conocimiento y experiencia en el campo
+                        de la informática con mis estudiantes y con cualquier persona interesada en aprender más
+                        sobre esta fascinante disciplina.</p>
+                    <p class="card-text">En este sitio web encontrarás información sobre mis cursos y talleres, así
+                        como también recursos útiles para aprender programación, bases de datos, seguridad
+                        informática, inteligencia artificial y otros temas relevantes en la era digital en la que
+                        vivimos.</p>
+                    <p class="card-text">Además, también publicaré regularmente artículos en mi blog sobre las
+                        últimas tendencias y avances en el mundo de la tecnología, y cómo pueden afectar a nuestra
+                        vida cotidiana.</p>
+                    <p class="card-text">¡Gracias por visitar mi sitio web y espero que encuentres la información
+                        que buscas!</p>
+                </div>
+                </div>
             </section>
         </section>
     </main>
-
-    </main>
-
     <!-- Pie de página -->
     <footer class="bg-light text-center py-3">
-        <a href="https://www.facebook.com" target="_blank">
+        <a href="https://api.whatsapp.com/send?phone=+59899383616" target="_blank" rel="noopener">
+            <img src="../assets/img/bxl-whatsapp.svg" alt="Logo de WhatsApp">
+        </a>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener">
             <img src="../assets/img/bxl-facebook.svg" alt="Logo de Facebook">
         </a>
-        <a href="https://www.instagram.com" target="_blank">
+        <a href="https://www.instagram.com" target="_blank" rel="noopener">
             <img src="../assets/img/bxl-instagram.svg" alt="Logo de Instagram">
         </a>
         <p>Derechos reservados © 2023 - Profe Informática.Sh</p>
@@ -101,6 +106,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--JS para AOS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
