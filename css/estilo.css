@@ -71,6 +71,22 @@ body {
   font-family: "Roboto";
 }
 
+#carouselExampleIndicators {
+  position: relative;
+  z-index: -1;
+}
+
+#carouselExampleIndicators {
+  margin: 0 auto;
+  max-width: 50%;
+  background-color: #f8f9fa;
+  color: #343a40;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+}
+
 .card-flip {
   perspective: 1000px;
 }
@@ -97,13 +113,18 @@ body {
   font-family: "Roboto";
 }
 
-#sect1 {
+#AboutSect1 {
   position: relative;
   z-index: -1;
+  display: flex;
+  justify-content: center;
+  /* centra horizontalmente el contenido */
+  align-items: center;
+  /* centra verticalmente el contenido */
 }
-#sect1 .card {
+#AboutSect1 .card {
   margin: 0 auto;
-  max-width: 70%;
+  max-width: 80%;
   background-color: #f8f9fa;
   color: #343a40;
   border-radius: 5px;
@@ -111,24 +132,24 @@ body {
   text-align: center;
   padding: 20px;
 }
-#sect1 h1 {
+#AboutSect1 h1 {
   font-size: 36px;
   margin-bottom: 20px;
   font-weight: bold;
 }
-#sect1 p {
+#AboutSect1 p {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
-#sect1 img {
-  max-width: 30%;
+#AboutSect1 img {
+  max-width: 100%;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 @media (max-width: 768px) {
-  #sect1 .card {
+  #AboutSect1 .card {
     max-width: 90%;
     margin: 0 auto;
   }

@@ -1,11 +1,16 @@
 @import '../utilities/mixins';
 
-#sect1 {
+#AboutSect1 {
   @include detrasNav;
+  display: flex;
+  justify-content: center;
+  /* centra horizontalmente el contenido */
+  align-items: center;
+  /* centra verticalmente el contenido */
 
   .card {
     margin: 0 auto;
-    max-width:70%;
+    max-width: 80%;
     background-color: #f8f9fa;
     color: #343a40;
     border-radius: 5px;
@@ -27,8 +32,7 @@
   }
 
   img {
-
-    max-width: 30%;
+    max-width: 100%;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
