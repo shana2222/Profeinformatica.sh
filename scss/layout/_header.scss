@@ -1,0 +1,25 @@
+@import '../utilities/map';
+@import '../utilities/variables';
+// Header - menú de navegación
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-light-pink;
+    background-color: map-get($colors, "primary"); // Utiliza un color del mapa    
+}
+.cabecera {
+    background-color: $color-cornsilk;
+    position: sticky;
+    top: 0px;
+    height: 100px;
+
+    #cabecera__top {
+        width: auto;
+        height: 100%;
+    }
+
+    .navbar-dark .nav-link {
+        color: $color-silver;// Utiliza variables
+    }
+}
