@@ -18,7 +18,7 @@ header {
 }
 
 .cabecera {
-  background-color: #FFF8DC;
+  background-color: #fafaf6;
   position: sticky;
   top: 0px;
   height: 100px;
@@ -28,7 +28,7 @@ header {
   height: 100%;
 }
 .cabecera .navbar-dark .nav-link {
-  color: #C0C0C0;
+  color: #fcf9f9;
 }
 
 footer img {
