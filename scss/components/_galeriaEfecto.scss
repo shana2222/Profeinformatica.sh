@@ -1,25 +1,23 @@
 @import '../utilities/mixins';
+@import '../base/reset';
 
-#carouselExampleIndicators{
-  @include detrasNav;
-}
-#carouselExampleIndicators{  
-    margin: 0 auto;
-    max-width: 50%;
-    background-color: #f8f9fa;
-    color: #343a40;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    padding: 20px;
-  
+
+#carouselExampleIndicators {
+  margin: 0 auto;
+  min-width: 50%;
+  max-width: 70%;
+  background-color: #f8f9fa;
+  color: #343a40;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
 }
 
 // Definimos las propiedades de la perspectiva del contenedor de las tarjetas
 .card-flip {
- 
   perspective: 1000px;
-  
+
   // Definimos la transición y la visibilidad de las caras de las tarjetas
   .card-front,
   .card-back {
