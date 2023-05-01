@@ -6,7 +6,33 @@
 }
 
 body {
-  font-family: "Roboto";
+  background-color: bisque;
+  overflow-x: hidden;
+}
+body h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+}
+body a {
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+body a li {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+}
+body li:hover {
+  border-radius: 5px;
+  text-decoration: solid;
+  background-color: rgba(137, 43, 226, 0.157);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+  color: royalblue;
+}
+body .bg-violet {
+  background-color: blueviolet;
 }
 
 header {
@@ -15,6 +41,11 @@ header {
   align-items: center;
   background-color: rgb(250, 239, 249);
   background-color: #007bff;
+  z-index: 100;
+  padding: 30px 0px;
+}
+header .navbar-light {
+  background-color: blueviolet;
 }
 
 .cabecera {
@@ -23,9 +54,18 @@ header {
   top: 0px;
   height: 100px;
 }
-.cabecera #cabecera__top {
-  width: auto;
+.cabecera .navbar {
+  height: 80px;
+  /* altura del navbar */
+}
+.cabecera .logo-wrapper {
   height: 100%;
+  /* altura del contenedor del logo */
+}
+.cabecera .logo-wrapper #cabecera__top {
+  max-height: 70%;
+  /* altura máxima de la imagen en relación con la altura del contenedor */
+  max-width: 150px;
 }
 .cabecera .navbar-dark .nav-link {
   color: #fcf9f9;
@@ -57,7 +97,6 @@ video {
 
 #sect1,
 #sect3 {
-  background-color: rgba(51, 51, 51, 0.4901960784);
   color: #e6dcdc;
 }
 
@@ -67,27 +106,46 @@ video {
 }
 
 /* Sección de cursos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "Roboto";
+  background-color: bisque;
+  overflow-x: hidden;
 }
-
-#carouselExampleIndicators {
-  position: relative;
-  z-index: -1;
+body h1 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
 }
-
-#carouselExampleIndicators {
-  position: relative;
-  z-index: -1;
+body a {
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+body a li {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+}
+body li:hover {
+  border-radius: 5px;
+  text-decoration: solid;
+  background-color: rgba(137, 43, 226, 0.157);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.397);
+  color: royalblue;
+}
+body .bg-violet {
+  background-color: blueviolet;
 }
 
 #carouselExampleIndicators {
   margin: 0 auto;
-<<<<<<< HEAD
-  max-width: 50%;
-=======
-  max-width: 80%;
->>>>>>> parent of 0981c14 ( correciones entrega final: arreglo del index -z logo link carrusel media queries)
+  min-width: 50%;
+  max-width: 70%;
   background-color: #f8f9fa;
   color: #343a40;
   border-radius: 5px;
@@ -118,13 +176,10 @@ body {
   transform: rotateY(0deg);
 }
 
-body {
-  font-family: "Roboto";
-}
-
 #AboutSect1 {
+  margin-top: 20px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   display: flex;
   justify-content: center;
   /* centra horizontalmente el contenido */
@@ -164,57 +219,118 @@ body {
   }
 }
 
-<<<<<<< HEAD
-body {
-  font-family: "Roboto";
+.h-100 {
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
 }
-
-@media (max-width: 767px) {
-=======
 @media (max-width: 600px) {
->>>>>>> parent of 0981c14 ( correciones entrega final: arreglo del index -z logo link carrusel media queries)
-  .h-100 .card-img-top {
-    position: relative;
-    z-index: -1;
+  .h-100 .img-fluid {
     max-height: 100px;
-    padding-top: 20px;
     object-fit: contain;
   }
+  .h-100 .h-100 {
+    width: 50%;
+  }
 }
-<<<<<<< HEAD
-@media (min-width: 768px) and (max-width: 991px) {
-=======
 @media (min-width: 801px) and (max-width: 1000px) {
->>>>>>> parent of 0981c14 ( correciones entrega final: arreglo del index -z logo link carrusel media queries)
-  .h-100 .card-img-top {
+  .h-100 .img-fluid {
     max-height: 200px;
     object-fit: contain;
   }
 }
 
-* {
+/* Reset CSS básico */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
+/* Estilos para la página */
 body {
-  background-color: bisque;
-  overflow-x: hidden;
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+  margin: 0;
 }
 
-h1 {
-  font-family: "Roboto", sans-serif;
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
   text-align: center;
 }
 
-a {
-  color: black;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: 1.2rem;
-  line-height: 2rem;
+h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Estilos para las tarjetas */
+.cardContenido {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+.cardContenido img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.cardContenido h2 {
+  font-size: 24px;
+  margin: 20px 0 10px;
+  color: #333;
+}
+.cardContenido p {
+  font-size: 18px;
+  margin: 10px 0;
+  line-height: 1.5;
+  color: #666;
+}
+.cardContenido .btn {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.card:hover .btn {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=estilo.css.map */
