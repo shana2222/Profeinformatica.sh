@@ -77,8 +77,17 @@ body {
 }
 
 #carouselExampleIndicators {
+  position: relative;
+  z-index: -1;
+}
+
+#carouselExampleIndicators {
   margin: 0 auto;
+<<<<<<< HEAD
   max-width: 50%;
+=======
+  max-width: 80%;
+>>>>>>> parent of 0981c14 ( correciones entrega final: arreglo del index -z logo link carrusel media queries)
   background-color: #f8f9fa;
   color: #343a40;
   border-radius: 5px;
@@ -155,19 +164,28 @@ body {
   }
 }
 
+<<<<<<< HEAD
 body {
   font-family: "Roboto";
 }
 
 @media (max-width: 767px) {
+=======
+@media (max-width: 600px) {
+>>>>>>> parent of 0981c14 ( correciones entrega final: arreglo del index -z logo link carrusel media queries)
   .h-100 .card-img-top {
     position: relative;
     z-index: -1;
     max-height: 100px;
+    padding-top: 20px;
     object-fit: contain;
   }
 }
+<<<<<<< HEAD
 @media (min-width: 768px) and (max-width: 991px) {
+=======
+@media (min-width: 801px) and (max-width: 1000px) {
+>>>>>>> parent of 0981c14 ( correciones entrega final: arreglo del index -z logo link carrusel media queries)
   .h-100 .card-img-top {
     max-height: 200px;
     object-fit: contain;

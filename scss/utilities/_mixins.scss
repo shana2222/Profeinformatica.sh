@@ -1,20 +1,16 @@
 @mixin font($font-family) {
-    font-family: $font-family;
-  }
-  
-  body {
-    @include font('Roboto');
-  }
-  
+  font-family: $font-family;
+}
 
-  @mixin centrar {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+@mixin centrar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-  @mixin detrasNav{
-    position: relative; 
-    z-index: -1;
-  }
+@mixin detrasNav {
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+}
